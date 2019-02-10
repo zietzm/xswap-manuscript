@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.css" integrity="sha384-L/SNYu0HM7XECWBeshTGLluQO9uVI1tvkCtunuoUbCHHoTH76cDyXty69Bb9I0qZ" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.js" integrity="sha384-ad+n9lzhJjYgO67lARKETJH6WuQVDDlRfj81AJJSswMyMkXTD49wBj5EP004WOY6" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.pseudocode = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*
  * The entry points of pseudocode-js
@@ -1519,3 +1523,81 @@ module.exports = {
 
 },{}]},{},[1])(1)
 });
+</script>
+<style rel="stylesheet" type="text/css">
+@font-face{
+    font-family:KaTeX_Typewriter_Replace;
+    src:url(fonts/KaTeX_Typewriter-Regular.eot);
+    src:url(fonts/KaTeX_Typewriter-Regular.eot#iefix) format('embedded-opentype'),url(fonts/KaTeX_Typewriter-Regular.woff2) format('woff2'),url(fonts/KaTeX_Typewriter-Regular.woff) format('woff'),url(fonts/KaTeX_Typewriter-Regular.ttf) format('ttf');
+    font-weight:400;font-style:normal
+}
+
+@font-face{
+    font-family:KaTeX_SansSerif_Replace;
+    src:url(fonts/KaTeX_SansSerif-Bold.eot);
+    src:url(fonts/KaTeX_SansSerif-Bold.eot#iefix) format('embedded-opentype'),url(fonts/KaTeX_SansSerif-Bold.woff2) format('woff2'),url(fonts/KaTeX_SansSerif-Bold.woff) format('woff'),url(fonts/KaTeX_SansSerif-Bold.ttf) format('ttf');
+    font-weight:700;
+    font-style:normal
+}
+
+.ps-root {
+    font-family: KaTeX_Main, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased !important;
+}
+.ps-root .ps-algorithm {
+    margin: 0.8em 0;
+    /* algorithm environment has borders; algorithmic has not */
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+}
+.ps-root .ps-algorithm.with-caption > .ps-line:first-child {
+    border-bottom: 2px solid black;
+}
+.ps-root .katex {
+    text-indent: 0;
+    font-size: 1em;
+}
+.ps-root .ps-line {
+    margin: 0; padding: 0;
+    line-height: 1.2;
+}
+.ps-root .ps-funcname {
+    font-family: KaTeX_Main, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-style: normal;
+    text-transform: none;
+}
+.ps-root .ps-keyword {
+    font-family: KaTeX_Main, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+}
+.ps-root .ps-comment {
+    font-family: KaTeX_Main, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+}
+/* line number support */
+.ps-root .ps-linenum {
+    font-size: 0.8em;
+    line-height: 1em;
+    width: 1.6em;
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    padding-right: 0.3em;
+}
+.ps-root .ps-algorithmic.with-linenum .ps-line.ps-code {
+    text-indent: -1.6em;
+}
+.ps-root .ps-algorithmic.with-linenum .ps-line.ps-code > span{
+    text-indent: 0em;
+}
+</style>

@@ -37,6 +37,7 @@ pandoc --verbose \
   --mathjax \
   --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.html \
+  --include-in-header=build/assets/pseudocode.html \
   --include-after-body=build/assets/anchors.html \
   --include-after-body=build/assets/hypothesis.html \
   --output=output/manuscript.html \
